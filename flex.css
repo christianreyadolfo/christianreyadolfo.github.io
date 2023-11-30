@@ -1,0 +1,145 @@
+/* Apply 'Poppins' font family to all elements and reset margin and padding */
+* {
+  font-family: 'poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Styling for the header */
+.header {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 1400px; /* Fixed width of the header */
+  padding: 20px 10%; /* Padding for the header */
+  align-items: center;
+  z-index: 100px; /* Set the stacking order of the header */
+  justify-content: space-between;
+  padding: 12px; /* Additional padding */
+  padding-top: 0%; /* Top padding */
+  padding-bottom: 0%;
+}
+
+/* Styling for the body */
+body {
+  margin: 0px;
+  background: rgb(24, 24, 22); /* Background color */
+  color: aliceblue;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Styling for the footer */
+footer {
+  text-align: center;
+  background-color: #521716; /* Background color for the footer */
+  margin-top: 130px; /* Margin from the top */
+}
+
+/* Styling for the website name */
+.name {
+  font-size: 60px;
+  color: rgb(24, 24, 22);
+  text-decoration: none;
+  font-weight: 600px;
+  margin-left: 100px;
+}
+
+/* Styling for navigation links */
+.minus a {
+  font-size: 23px;
+  font-weight: 500px;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 18px;
+  transition: 1ms;
+}
+
+/* Hover and active styles for navigation links */
+.minus a:hover,
+.minus a.active {
+  color: red;
+}
+
+/* Styling for images */
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+  transition: .5s; /* Smooth transition on hover */
+}
+
+/* Styling for the card container */
+.card {
+  height: 500px;
+  margin: 50px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* Styling for the container holding the cards */
+.container {
+  display: flex;
+  padding: 0px 0px 0px 170px;
+}
+
+/* Styling for the introduction section within the card */
+.intro {
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  position: absolute;
+  bottom: 204px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: rgba(103, 94, 94, 0);
+  transition: .5s;
+}
+
+/* Styling for headings within the introduction section */
+h1 {
+  margin: 5px;
+  font-size: 30px;
+}
+
+/* Styling for paragraphs within the introduction section */
+p {
+  font-size: 18px;
+  margin: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Styling for bold text within paragraphs */
+span {
+  font-weight: bold;
+}
+
+/* Hover effect for the card */
+.card:hover {
+  cursor: pointer;
+}
+
+/* Hover effect for the introduction section */
+.card:hover .intro {
+  height: 220px;
+  bottom: 204px;
+  background: rgba(240, 46, 170, 0.4);
+  border-radius: 30px;
+}
+
+/* Hover effect for paragraphs within the card */
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover effect for images within the card */
+.card:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}

@@ -1,0 +1,260 @@
+/* Set the font family for all elements to 'poppins' or sans-serif */
+* {
+  font-family: 'poppins', sans-serif;
+}
+
+/* Styling for the header */
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1400px; /* Fixed width of the header */
+  padding: 20px 10%; /* Padding for the header */
+  align-items: center;
+  z-index: 100px; /* Set the stacking order of the header */
+  justify-content: space-between;
+  padding: 12px; /* Additional padding */
+  padding-top: 0%; /* Top padding */
+  padding-bottom: 0%; /* Bottom padding */
+}
+
+/* Styling for the body */
+body {
+  margin: 0px;
+  background-color: rgb(115, 7, 193);
+  color: aliceblue;
+}
+
+/* Styling for the name element */
+.name {
+  font-size: 50px;
+  color: rgb(244, 241, 243);
+  text-decoration: none;
+  font-weight: 600px;
+  margin-left: 100px;
+}
+
+/* Styling for the 'minus' class and its child links */
+.minus a {
+  font-size: 23px;
+  font-weight: 500px;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 18px;
+  transition: 1ms;
+}
+
+/* Hover and active styles for the links in the 'minus' class */
+.minus a:hover,
+.minus a.active {
+  color: red;
+}
+
+/* Styling for the home section */
+.home {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  padding: 0 10%;
+  background: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+/* Styling for the content within the home section */
+.home-content {
+  max-width: 600px;
+}
+
+/* Styles for various headings and text within the home content */
+.home-content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.home-content h3 {
+  font-size: 31px;
+  font-weight: 700;
+  color: rgb(236, 153, 153);
+  margin: 0;
+}
+
+.home-content p {
+  font-size: 16px;
+}
+
+/* Styling for the button box within the home content */
+.home-content .btn-box {
+  width: 345px;
+  height: 50px;
+}
+
+/* Styling for links within the button box */
+.btn-box a {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 25px;
+}
+
+/* Styles for social media icons */
+.fac {
+  color: aliceblue;
+}
+
+.ins {
+  color: rgb(233, 41, 73);
+}
+
+.twi {
+  color: blue;
+}
+
+/* Styling for the 'rey-image' class */
+.rey-image {
+  background-color: #521716;
+}
+
+/* Styling for the footer */
+footer {
+  text-align: center;
+  background-color: #521716;
+}
+
+/* Styling for the home image */
+.home-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 200px;
+}
+
+/* Styling for the animation on hover of the home image */
+.home-image::before {
+  content: '';
+  position: absolute;
+  inset: -10px 140px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+/* Animation keyframes for the home image */
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for the background of the home image on hover */
+.home-image:hover::before {
+  inset: -20px 0px;
+}
+
+/* Styling for the background of the home image after hover */
+.home-image::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #521716;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Styling for the image box containing the home image */
+.image-box {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid #e6e6e9;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styling for the image within the image box */
+.image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Styling for the image on hover of the home image */
+.home-image:hover .image-box img {
+  opacity: 0;
+}
+
+/* Styling for the heading within the image box */
+.image-box h2 {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Styling for the link within the image box */
+.image-box a {
+  position: relative;
+  padding: 10px 20px;
+  background: #fff;
+  color: black;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Hover effect for the link within the image box */
+.image-box a:hover {
+  letter-spacing: 0.2em;
+}
+
+/* Styling for the next page section */
+.next-page {
+  height: 100vh;
+  background-color: rgba(240, 46, 169, 0.584);
+  padding-top: 70px;
+  font-size: 30px;
+}
+
+/* Styling for the image within the next page section */
+.next-page img {
+  width: 1300px;
+  padding-left: 150px;
+}
+
+/* Styling for the heading within the next page section */
+.next-page h1 {
+  margin: 0%;
+  text-align: center;
+  color: #fff;
+}
+
+/* Smooth scrolling behavior for the HTML element */
+html {
+  scroll-behavior: smooth;
+}
